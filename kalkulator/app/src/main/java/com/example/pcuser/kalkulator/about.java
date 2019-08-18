@@ -17,6 +17,8 @@ public class about extends AppCompatActivity {
 
         TextView tvabout = (TextView)findViewById(R.id.tvabout);
 
+//---
+
         tvabout.setText("Aplikasi kumpulan rumus \n" +
                 "bangun datar dan bangun ruang");
 
