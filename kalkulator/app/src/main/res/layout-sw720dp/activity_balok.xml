@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".balok"
+    android:id="@+id/ActBalok"
+    android:background="@drawable/tes4">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v8"/>
+    <ImageView
+        android:layout_below="@+id/v8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/balok"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/Ivbalok"
+        />
+
+    <ScrollView
+        android:layout_below="@+id/Ivbalok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:textAlignment="gravity"
+                                android:gravity="fill"
+                                android:text="Balok adalah benda yang berbentuk  persegi panjang dengan kedua ujung berbentuk  persegi. Balok memiliki  6 buah permukaan yaitu   sisi  depan dan belakang,  sisi atas dan bawah, dan 2 buah sisi ujung (kiri dan kanan). Setiap pasang sisi memiliki ukuran yang sama"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="p = Panjang"
+                        android:id="@+id/tvPbalok"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tvLbalok"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="l = Lebar"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tvTbalok"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLbalok"
+                        android:text="t = Tinggi"
+
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/white"
+                        android:id="@+id/v11"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RUMUS"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvRbalok"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/white"
+                        android:id="@+id/v111"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Luas = 2 * ((p*l) + (p*t) + (l*t))"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvLLbalok"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keliling = 4 * ( p + l + t ) "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvKbalok"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume = p * l * t "
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvVbalok"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+
+
+                </LinearLayout>
+
+            <View
+                android:layout_below="@+id/tvVbalok"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v9"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HITUNG"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/hitungpersegipanjang"
+                android:layout_below="@id/v9"/>
+            <View
+                android:layout_below="@+id/hitungpersegipanjang"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/EtPanjangBalok"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" p "
+                    android:textColorHint="@color/white"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    />
+                <EditText
+                    android:id="@+id/EtLebarBalok"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" l "
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    />
+                <EditText
+                    android:id="@+id/EtTinggiBalok"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" t "
+                    android:text=""
+                    android:textColorHint="@color/white"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal"
+                    />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvketeranganBalok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Keterangan"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="16sp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:onClick="proseskelilingBalok"
+            android:id="@+id/btnKelilingBalok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keliling"
+            />
+        <Button
+            android:id="@+id/btnLuasBalok"
+            android:onClick="prosesluasBalok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas"
+            />
+        <Button
+            android:id="@+id/btnVolumeBalok"
+            android:onClick="prosesvolumeBalok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvhasilBalok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:hint="Hasil"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:layout_gravity="fill"
+        android:textAlignment="center"
+
+        />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lingkaran"
+    android:id="@+id/ActLingkaran"
+    android:background="@drawable/tes4">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v1111"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:background="@drawable/lingkarandtr"
+        android:scaleType="fitXY"
+        android:layout_below="@id/v1111"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/Ivlingkaran"
+        />
+    <ScrollView
+        android:layout_below="@id/Ivlingkaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lingkaran merupakan kurva tertutup sederhana beraturan.Sifat-Sifat
+Jumlah derajat lingkaran sebesar 360⁰.
+Lingkaran mempunyai 1 titik pusat.
+Mempunyai simetri lipat dan simetri putar yang jumlahnya tidak terhingga."/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r = Jari-jari || r = d/2"
+                        android:id="@+id/tvRlingkaran"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvDlingkaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="d = Diameter || d = 2 * r"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/tvphiL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="phi = 3.14 atau 22/7 "
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v11"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RUMUS"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id="@+id/tvRbalok"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v111"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luas =  phi * r * r"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvLl"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keliling = 2 * phi * r "
+                        android:textColor="@color/white"
+                        android:id="@+id/tvKl"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v12"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HITUNG"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/hitunglingkaran"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v13"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/EtRl"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="r"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:inputType="numberDecimal"
+                    />
+
+                <TextView
+                    android:id="@+id/tvketeranganL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:hint="keterangan"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="16sp"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:layout_marginTop="20dp"
+                            android:onClick="proseskelilingl"
+                            android:id="@+id/btnKelilingLingkaran"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="keliling"
+                            android:textSize="14sp"
+                            />
+                        <Button
+                            android:id="@+id/btnLuasPersegiP"
+                            android:onClick="prosesluasl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Luas"
+                            android:textSize="14sp"/>
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvhasilLingkaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:hint="Hasil"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="42sp"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

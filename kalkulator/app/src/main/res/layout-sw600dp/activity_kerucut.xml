@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kerucut"
+    android:background="@drawable/tes4"
+    android:id="@+id/ActKerucut">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v17"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kerucut"
+        android:scaleType="fitXY"
+        android:layout_below="@id/v17"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/IvJG"
+        />
+
+<ScrollView
+    android:layout_below="@+id/IvJG"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dalam geometri, kerucut adalah sebuah limas istimewa yang beralas lingkaran. Kerucut memiliki 2 sisi dan 1 rusuk. Sisi tegak kerucut tidak berupa segitiga tapi berupa bidang miring yang disebut selimut kerucut."/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="r = Jari - Jari"
+                    android:id="@+id/tvAJG"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTJG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="t = Tinggi"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tvBJG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="s = Sisi"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/white"
+                    android:id="@+id/v11"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RUMUS"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvRbalok"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/white"
+                    android:id="@+id/v111"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volume = 1/3 * phi * r * r * t"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvLJG"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L.Permukaan = phi * r * (r + s)"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvKJG"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:id="@+id/v18"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HITUNG"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:id="@+id/hitungJG"
+          />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:id="@+id/v19"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EtJariKerucut"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" r "
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/EtTinggiKerucut"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" t "
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+
+                    />
+
+                <EditText
+                    android:id="@+id/EtSisiKerucut"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" s "
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvKeteranganKerucut"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="Keterangan"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/btnLuasKerucut"
+                        android:onClick="proseskLuasKerucut"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="L.Permukaan" />
+
+                    <Button
+                        android:onClick="prosesVolumeKerucut"
+                        android:id="@+id/btnVolumeKerucut"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Volume"/>
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvHasilKerucut"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:hint="Hasil"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="42sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

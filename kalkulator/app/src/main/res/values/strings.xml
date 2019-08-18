@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Rumus Bangun</string>
+    <string name="title_activity_menu">menu</string>
+    <string name="action_keluar">Keluar</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="kedua">Bangun Datar</string>
+    <string name="tabruang">Bangun Ruang</string>
+    <string name="tentang">Tentang</string>
+    <string name="bantuan">Bantuan</string>
+</resources>

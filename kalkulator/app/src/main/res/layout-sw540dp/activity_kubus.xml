@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kubus"
+    android:id="@+id/ActKubus"
+    android:background="@drawable/tes4">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v8"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kubus"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/v8"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/Ivbalok"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ScrollView
+        android:layout_below="@id/Ivbalok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/Ivbalok"
+                android:text="Kubus adalah bangun ruang tiga dimensi yang dibatasi oleh enam bidang sisi yang kongruen berbentuk bujur sangkar.
+Kubus memiliki 6 sisi, 12 rusuk dan 8 titik sudut. Kubus juga disebut bidang enam beraturan, selain itu juga merupakan bentuk khusus dalam prisma segiempat"
+                />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R = Ruas"
+                        android:id="@+id/tvPbalok"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v11"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RUMUS"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id="@+id/tvRbalok"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v111"/>
+            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luas = 6 * (R * R)"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvLKubus"
+                        android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keliling = 12 * R "
+                        android:textColor="@color/white"
+                        android:id="@+id/tvKKubus"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume = R * R * R "
+                        android:textColor="@color/white"
+                        android:id="@+id/tvVKubus"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+
+            <View
+                android:layout_below="@+id/tvVKubus"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v9"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HITUNG"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/hitungKubus"
+                android:layout_below="@id/v9"/>
+            <View
+                android:layout_below="@+id/hitungKubus"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/EtRusukKubus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" R "
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvketeranganKubus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Keterangan"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:onClick="proseskelilingKubus"
+                            android:id="@+id/btnKelilingKubus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="keliling"
+                            />
+                        <Button
+                            android:id="@+id/btnLuasKubus"
+                            android:onClick="prosesluasKubus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Luas"
+                            />
+                        <Button
+                            android:id="@+id/btnVolumeKubus"
+                            android:onClick="prosesvolumeKubus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Volume"
+                            />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvhasilKubus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:hint="Hasil"
+                        android:textSize="42sp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:layout_gravity="fill"
+                        android:textAlignment="center"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

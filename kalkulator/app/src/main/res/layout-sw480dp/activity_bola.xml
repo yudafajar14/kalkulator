@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tes4"
+    tools:context=".bola"
+    android:id="@+id/ActBola">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v8"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bola"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/v8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/Ivbalok"
+        />
+<ScrollView
+    android:layout_below="@+id/Ivbalok"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bola adalah bangun ruang sisi lengkung yang dibatasi oleh satu bidang lengkung. Bola didapatkan dari bangun setengah lingkaran yang diputar satu putaran penuh atau 360 derajat pada garis tengahnya.
+Bola juga merupakan bangun ruang sisi lengkung yang dibatasi oleh satu bidang lengkung." />
+
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Ivbalok"
+                    android:text="r = Jari - Jari"
+                    android:id="@+id/tvPbalok"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvLbalok"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="phi = 3.14 atau 22/7 "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/white"
+                    android:id="@+id/v11"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RUMUS"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvRbalok"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/white"
+                    android:id="@+id/v111"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L.Permukaan = 4 * phi * r * r"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvLKubus"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volume = 4/3 * phi * r * r * r "
+                    android:textColor="@color/white"
+                    android:id="@+id/tvVKubus"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:id="@+id/v9"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HITUNG"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:id="@+id/hitungKubus"
+         />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:id="@+id/v10"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/EtJariBola"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" r "
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvketeranganBola"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Keterangan"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnLuasBola"
+                        android:onClick="prosesluasBola"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="L.Permukaan"
+                        />
+                    <Button
+                        android:id="@+id/btnVolumeBola"
+                        android:onClick="prosesvolumeBola"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Volume"
+                        />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvhasilBola"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:hint="Hasil"
+                    android:textSize="42sp"
+                    android:layout_gravity="fill"
+                    android:textAlignment="center"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

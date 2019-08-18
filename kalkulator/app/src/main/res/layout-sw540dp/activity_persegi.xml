@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tes4"
+    tools:context=".persegi"
+    android:id="@+id/ActPersegi">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v5"/>
+
+    <ImageView
+        android:id="@+id/Ivpersegi"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/v5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/persegidtr"
+        android:scaleType="fitXY" />
+    <ScrollView
+        android:layout_below="@id/Ivpersegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Persegi adalah bangun datar dua dimensi yang dibentuk oleh empat buah rusuk yang sama panjang dan memiliki empat buah sudut siku-siku.
+Sifat:
+Mempunyai 4 titik sudut.
+Mempunyai 4 sudut siku-siku 90⁰.
+Mempunyai 2 diagonal yang sama panjang.
+Mempunyai 4 simetri lipat.
+Mempunyai 4 simetri putar"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Ivpersegi"
+                        android:text="s = Sisi"
+                        android:id="@+id/tvSp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v11"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RUMUS"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id="@+id/tvRbalok"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v111"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luas = s * s"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvLp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/tvKp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keliling = 2( s + s )"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvKp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v6"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HITUNG"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/hitungpersegi"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v7"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:id="@+id/EtSisiPersegi"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="s"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:inputType="numberDecimal"
+                    />
+                <TextView
+                    android:id="@+id/tvketeranganp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:hint="keterangan"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="16sp"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/btnKelilingPersegi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="keliling"
+                            android:textSize="14sp"
+                            />
+
+                        <Button
+                            android:id="@+id/btnLuasPersegi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Luas"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvhasilPersegi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:hint="Hasil"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="42sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

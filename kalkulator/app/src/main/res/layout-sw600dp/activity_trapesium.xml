@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trapesium"
+    android:background="@drawable/tes4"
+    android:id="@+id/ActTrapesium">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v17"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:background="@drawable/trapesiumdtr"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:id="@+id/IvTrapesium"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/v17"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ScrollView
+        android:layout_below="@id/IvTrapesium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trapesium adalah bangun segiempat dengan sepasang sisi berhadapan sejajar.
+Sifat-Sifat:
+Tiap pasang sudut yang sisinya sejajar adalah 180⁰.
+Jenis-jenis trapesium:
+a. Trapesium Sembarang
+mempunyai sisi-sisi yang berbeda.
+b. Trapesium Siku-SIku
+mempunyai sudut siku-siku.
+c. Trapesium Sama Kaki
+mempunyai sepasang kaki sama panjang"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a = Sisi a"
+            android:id="@+id/tvATrapesium"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvTTrapesium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="t = Tinggi"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvBTrapesium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b = Sisi b"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvLuasTrapesium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="l = Sisi l"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v11"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RUMUS"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id="@+id/tvRbalok"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v111"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luas = ((a + b) * t)/2"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvLTrapesium"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keliling = a + b + t + l"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvKTrapesium"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v18"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HITUNG"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/hitungTrapesium"
+               />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v19"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:hint=" a "
+                        android:id="@+id/EtATP"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:text=""
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        />
+                    <EditText
+                        android:id="@+id/EtBTP"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:hint=" b "
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        />
+
+                    <EditText
+                        android:id="@+id/EtTTP"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:hint=" t "
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        />
+
+
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:hint=" l "
+                        android:id="@+id/EtLTP"
+                        android:text=""
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvketeranganTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Keterangan"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="16sp"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:onClick="proseskelilingTP"
+                            android:id="@+id/btnKelilingTP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="keliling"
+                            />
+                        <Button
+                            android:id="@+id/btnLuasTP"
+                            android:onClick="prosesluasTP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Luas"
+                            />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvhasilTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:hint="Hasil"
+                        android:textSize="42sp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

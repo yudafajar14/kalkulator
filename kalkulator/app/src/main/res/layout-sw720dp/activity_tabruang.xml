@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabruang">
+
+
+
+    <ScrollView
+        android:id="@+id/Sc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balok"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/balok"/>
+
+                <Button
+                    android:id="@+id/btnBalok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+    android:text="Selengkapnya..."
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="47dp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Kubus"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/kubus"/>
+                <Button
+                    android:id="@+id/btnKubus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+    android:text="Selengkapnya..."
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="47dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limas Segi Empat"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/limas"
+                    />
+                <Button
+                    android:id="@+id/btnLimas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+    android:text="Selengkapnya..."
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tabung"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/tabung" />
+                <Button
+                    android:id="@+id/btnTabung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+    android:text="Selengkapnya..."
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bola"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bola" />
+                <Button
+                    android:id="@+id/btnBola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+    android:text="Selengkapnya..."
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kerucut"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/kerucut" />
+                <Button
+                    android:id="@+id/btnKerucut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+    android:text="Selengkapnya..."
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limas Segitiga"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/limassegitiga" />
+                <Button
+                    android:id="@+id/btnlimastiga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selengkapnya..."
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prisma Segitiga"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/prismasegitiga" />
+                <Button
+                    android:id="@+id/btnprisma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+    android:text="Selengkapnya..."
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

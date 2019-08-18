@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.pcuser.kalkulator.MainActivity">
+    <item
+        android:id="@+id/action_bantuan"
+        android:orderInCategory="200"
+        android:title="@string/bantuan"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_tentang"
+        android:orderInCategory="200"
+        android:title="@string/tentang"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_keluar"
+        android:orderInCategory="200"
+        android:title="@string/action_keluar"
+        app:showAsAction="never"
+        />
+</menu>

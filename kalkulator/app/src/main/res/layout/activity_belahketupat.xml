@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".belahketupat"
+    android:background="@drawable/tes4"
+    android:id="@+id/ActBelahKetupat">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v20"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:background="@drawable/ketupatdtr"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/v20"
+        android:layout_marginTop="5dp"
+        android:id="@+id/IvBelahKetupat"
+        />
+
+    <ScrollView
+        android:layout_below="@id/IvBelahKetupat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Belah ketupat adalah bangun datar dua dimensi yang dibentuk oleh empat rusuk yang sama panjang dan dan memiliki dua pasang sudut bukan siku-siku yang masing-masing sama besar dengan sudut di hadapannya. Sifat- Sifat:
+Mempunyai 2 simetri lipat.
+Mempunyai 2 simeteri putar.
+Mempunyai 4 titik sudut.
+Sudut yang berhadapan besarnya sama.
+Sisinya tidak tegak lurus.
+Mempunyai 2 diagonal yang berbeda panjangnya" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IvBelahKetupat"
+            android:text="a = Sisi a"
+            android:id="@+id/tvABelahKetupatL"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:id="@+id/tvBBelahKetupat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvABelahKetupatL"
+            android:text="b = Sisi b"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvd1BelahKetupat"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d1 = Diagonal 1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:id="@+id/tvd12BelahKetupat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d2 = Diagonal 2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/white"
+                    android:id="@+id/v11"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RUMUS"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvRbalok"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/white"
+                    android:id="@+id/v111"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luas =  (d1 * d2)/2"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvLBelahKetupat"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Keliling = 2 * (a + b)"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvKBelahKetupat"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v21"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HITUNG"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/hitungBelahKetupat"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v22"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:hint=" a "
+                    android:id="@+id/EtABK"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/Etd1BK"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" d1 "
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    />
+                <EditText
+                    android:id="@+id/Etd2BK"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" d2 "
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    />
+
+                <EditText
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:hint=" b "
+                    android:id="@+id/EtBBK"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvketeranganBK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Keterangan"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:text=""
+                android:textSize="16sp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:onClick="proseskelilingBK"
+            android:id="@+id/btnKelilingBK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keliling"
+            />
+        <Button
+            android:id="@+id/btnLuasBK"
+            android:onClick="prosesluasBK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvhasilBK"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:hint="Hasil"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textAlignment="center"
+
+        />
+</LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

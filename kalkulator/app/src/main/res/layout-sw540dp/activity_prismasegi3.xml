@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".prismasegi3"
+    android:id="@+id/ActPrisma3"
+    android:background="@drawable/tes4">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v8"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/prismasegitiga"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/v8"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/Ivpersegipanjang"
+        />
+    <ScrollView
+        android:layout_below="@id/Ivpersegipanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Menurut kamus besar bahasa Indonesia, limas berarti benda ruang yang alasnya berbentuk segitiga (segi empat dan sebagainya) dan bidang sisinya berbentuk segitiga dengan titik puncak yang berimpit.
+    Limas segitiga adalah limas yang memiliki alas berbentuk segitiga (baik segitiga sama kaki, segitiga sama sisi, segitiga siku-siku, maupun segitiga sembarang)" />
+
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a = Alas"
+                        android:id="@+id/tvPpp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvLpl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="t = Tinggi"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/tvPpl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T = Panjang Prisma"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp" />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v11"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RUMUS"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id="@+id/tvRbalok"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v111"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume = 1/2 * a * t * T"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvLpp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L.Permukaan = t * (a + (3 * T))"
+                        android:textColor="@color/white"
+                        android:id="@+id/tvKpp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v9"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HITUNG"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/hitungpersegipanjang"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"
+                android:id="@+id/v10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:baselineAligned="true">
+
+                    <EditText
+                        android:id="@+id/EtAlasPrisma3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:fitsSystemWindows="true"
+                        android:hint=" a "
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:text=""
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/EtTinggiPrisma3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:fitsSystemWindows="true"
+                        android:hint=" t "
+                        android:inputType="numberDecimal"
+                        android:text=""
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textAlignment="center" />
+                    <EditText
+                        android:id="@+id/EtPanjangPrisma3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:hint=" T "
+                        android:text=""
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:fitsSystemWindows="true"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvketeranganPrisma3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Keterangan"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:onClick="prosesluasPrisma3"
+                            android:id="@+id/btnLuasPrisma3"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="L.Permukaan"
+                            />
+                        <Button
+                            android:id="@+id/btnVolumePrisma3"
+                            android:onClick="prosesvolumePrisma3"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Volume"
+                            />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvhasilPrisma3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:hint="Hasil"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="42sp"
+                        android:textAlignment="center"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

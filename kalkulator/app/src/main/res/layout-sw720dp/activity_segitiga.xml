@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".segitiga"
+    android:id="@+id/ActSegitiga"
+    android:background="@drawable/tes4"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white"
+        android:id="@+id/v2"/>
+    <ImageView
+        android:id="@+id/Ivsegitiga"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/v2"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/segitigadtr"
+        android:scaleType="fitXY"
+        />
+
+    <ScrollView
+        android:layout_below="@id/Ivsegitiga"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Segitiga adalah bangunan geometri yang dibuat dari tiga sisi yang berupa garis lurus dan tiga sudut"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvAs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="a = Alas"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvSs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="s = Sisi"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvTs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="t = Tinggi"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:id="@+id/v11"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RUMUS"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/tvRbalok"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:id="@+id/v111"/>
+                <TextView
+                    android:id="@+id/tvLs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Luas = (a * t) / 2"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvKs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Keliling = s + s + s"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:id="@+id/v3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HITUNG"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:id="@+id/hitungsegitiga"
+         />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:id="@+id/v4"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/EtAlasSegitiga"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" a "
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    />
+                <EditText
+                    android:textAlignment="center"
+                    android:id="@+id/EtTinggiSegitiga"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" t "
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:inputType="numberDecimal"
+                    />
+                <EditText
+                    android:id="@+id/EtSisiSegitiga"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" s "
+                    android:text=""
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvketerangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Keterangan"
+                android:textAlignment="center"
+                android:text=""
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:onClick="proseskeliling"
+                        android:id="@+id/btnKelilingSegitiga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="keliling"
+                        android:textSize="14sp"
+                        />
+                    <Button
+                        android:id="@+id/btnLuasSegitiga"
+                        android:onClick="prosesluas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luas"
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvhasilSegitiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:hint="Hasil"
+                    android:textAlignment="center"
+                    android:textSize="42sp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

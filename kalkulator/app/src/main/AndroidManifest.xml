@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pcuser.kalkulator">
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity
+
+            android:name=".pertama"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- suppress AndroidDomInspection -->
+        <activity
+            android:name=".kedua"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".segitiga"
+            android:label="SEGITIGA"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".persegi"
+            android:parentActivityName=".MainActivity"
+            android:label="PERSEGI"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".persegipanjang"
+            android:label="PERSEGI PANJANG"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".lingkaran"
+            android:parentActivityName=".MainActivity"
+            android:label="LINGKARAN"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".jajargenjang"
+            android:screenOrientation="portrait"
+            android:label="JAJAR GENJANG"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".trapesium"
+            android:label="TRAPESIUM"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".belahketupat"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:label="BELAH KETUPAT"/>
+        <activity
+            android:name=".layangan"
+            android:label="LAYANG - LAYANG"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- suppress AndroidDomInspection -->
+        <activity
+            android:name=".tabruang"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".balok"
+            android:label="BALOK"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".kubus"
+            android:parentActivityName=".MainActivity"
+            android:label="KUBUS"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".limas4"
+            android:label="LIMAS SEGI EMPAT"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".tabung"
+            android:label="TABUNG"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".bola"
+            android:label="BOLA"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".kerucut"
+            android:label="KERUCUT"
+            android:parentActivityName=".MainActivity"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".limas3"
+            android:label="LIMAS SEGITIGA"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".prismasegi3"
+            android:label="PRISMA SEGITIGA"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".about"
+            android:label="@string/tentang"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".bantuan"
+            android:screenOrientation="portrait"
+            android:label="@string/bantuan"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            >
+
+        </activity>
+    </application>
+
+</manifest>
